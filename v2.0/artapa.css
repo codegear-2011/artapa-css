@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! fx.io v1.0.4 | MIT License | github.com/jgthms/fx */
-/* Bulma Utilities */
+/*! artapacss.vercel.app v2.0 | MIT License | github.com/codegear-2011/artapa-css*/
+/* artapa Utilities */
 :root {
   --fx-control-radius: var(--fx-radius);
   --fx-control-radius-small: var(--fx-radius-small);
@@ -13,7 +13,7 @@
   --fx-control-focus-shadow-l: 50%;
 }
 
-/* Bulma Themes */
+/* artapa Themes */
 :root {
   --fx-scheme-h: 221;
   --fx-scheme-s: 14%;
