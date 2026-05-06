@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Artapa CSS"
   image:
-    src: /public/output-onlinepngtools-1.png
+    src: /logo.svg
     alt: artapa Logo
   text: ""
   tagline: imagine Big,Build Fast
