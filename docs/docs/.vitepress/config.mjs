@@ -6,7 +6,7 @@ export default defineConfig({
   description: "A Lightweight CSS Framework for Rapid Web Development",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/public/output-onlinepngtools-1.png',
+    logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Overview of ArtapaCSS', link: '/overview' },
