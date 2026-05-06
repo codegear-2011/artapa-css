@@ -1,15 +1,16 @@
 
-# Overview of Flexora
+# Overview of Artapa
 
-Flexora is a **CSS library**. This means it provides CSS classes to help you style your HTML code.
+Artapa is a **CSS library**. This means it provides CSS classes to help you style your HTML code.
 
-  To use Flexora, you can either:
+  To use Artapa, you can either:
  - use one of the pre-compiled ```.css``` files
 
- - or install the **FLEXORA CLI** to make auto files(Under Development)
+ - or install the **Artapa CLI** to make auto files(Under Development)
+(This is available in version 2.1)
   
 ## Code requirements
-For Flexora to work correctly, you need to make your webpage **responsive**
+For Artapa to work correctly, you need to make your webpage **responsive**
 ### 1. Use the *HTML5 doctype*
 ```html
     <!DOCTYPE html>
@@ -33,7 +34,7 @@ If you want to get started **right away**, you can use this *HTML starter templa
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Flexora!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codegear-2011/flexora-css/flexora.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codegear-2011/artapa-css/v2.0/artapa.css">
   </head>
 
   <body>
@@ -43,7 +44,7 @@ If you want to get started **right away**, you can use this *HTML starter templa
         Hello World
       </h1>
       <p class="subtitle">
-        My first website with <strong>Flexora</strong>!
+        My first website with <strong>Artapa</strong>!
       </p>
     </div>
   </section>
