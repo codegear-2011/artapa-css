@@ -9,7 +9,8 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/overview' }
+      { text: 'Overview of ArtapaCSS', link: '/overview' }
+      { text: 'Getting Started with Artapa', link: '/api-examples' }
     ],
 
     sidebar: [
