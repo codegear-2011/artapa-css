@@ -3,10 +3,10 @@
 layout: home
 
 hero:
-  name: "Flexora CSS"
+  name: "Artapa CSS"
   image:
     src: /logo.png
-    alt: Flexora Logo
+    alt: artapa Logo
   text: ""
   tagline: imagine Big,Build Fast
 
@@ -16,7 +16,7 @@ hero:
       link: /overview
     - theme: alt
       text: view on github
-      link: https://github.com/codegear-2011/flexora-css
+      link: https://github.com/codegear-2011/artapa-css
 
 features:
   - title: Ultra Fast
