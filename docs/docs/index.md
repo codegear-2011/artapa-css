@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Artapa CSS"
   image:
-    src: /logo.svg
+    src: "https://i.ibb.co/C5wzhgpN/file-00000000542c71fa9e66d074d73aa39a-1.png"
     alt: artapa Logo
   text: ""
   tagline: imagine Big,Build Fast
