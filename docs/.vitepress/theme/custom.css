@@ -1,13 +1,12 @@
 /* =========================================
-   ARTAPA CSS — VitePress Custom Theme
-   Bulma Inspired + Glow UI
+   ARTAPA CSS — VitePress Theme
 ========================================= */
 
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* =========================================
-   ROOT COLORS
+   ROOT
 ========================================= */
 
 :root {
@@ -28,11 +27,12 @@
 
   --vp-home-hero-name-color: transparent;
 
-  --vp-home-hero-name-background: linear-gradient(
-    120deg,
-    #00d1b2 30%,
-    #8b5cf6 100%
-  );
+  --vp-home-hero-name-background:
+    linear-gradient(
+      135deg,
+      #00d1b2,
+      #8b5cf6
+    );
 }
 
 /* =========================================
@@ -40,9 +40,16 @@
 ========================================= */
 
 body {
+
   background:
-    radial-gradient(circle at top left, rgba(139,92,246,0.15), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(0,209,178,0.15), transparent 30%),
+    radial-gradient(circle at top left,
+    rgba(139,92,246,0.12),
+    transparent 30%),
+
+    radial-gradient(circle at bottom right,
+    rgba(0,209,178,0.12),
+    transparent 30%),
+
     #0b1020;
 
   overflow-x: hidden;
@@ -53,15 +60,20 @@ body {
 ========================================= */
 
 .VPNav {
-  background: rgba(11,16,32,0.7) !important;
 
-  backdrop-filter: blur(14px);
+  background:
+    rgba(11,16,32,0.75) !important;
 
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
 }
 
 .VPNavBarTitle {
+
   font-weight: 800;
+
   letter-spacing: 1px;
 }
 
@@ -70,14 +82,19 @@ body {
 ========================================= */
 
 .VPHero {
+
   position: relative;
+
+  overflow: visible !important;
+
   padding-top: 100px !important;
   padding-bottom: 100px !important;
 }
 
-/* Glow Background */
+/* HERO BACKGROUND GLOW */
 
 .VPHero::before {
+
   content: "";
 
   position: absolute;
@@ -90,38 +107,46 @@ body {
 
   transform: translate(-50%, -50%);
 
-  background: radial-gradient(
-    circle,
-    rgba(139,92,246,0.35),
-    transparent 70%
-  );
+  background:
+    radial-gradient(
+      circle,
+      rgba(139,92,246,0.25),
+      transparent 70%
+    );
 
   filter: blur(120px);
 
   z-index: -1;
 }
 
-/* Hero Title */
+/* HERO TITLE */
 
 .VPHero .name {
+
   font-size: 72px !important;
+
   font-weight: 900 !important;
+
   line-height: 1.1;
 
-  background: linear-gradient(
-    90deg,
-    #00d1b2,
-    #8b5cf6
-  );
+  background:
+    linear-gradient(
+      90deg,
+      #00d1b2,
+      #8b5cf6
+    );
 
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
-/* Hero Tagline */
+/* HERO TAGLINE */
 
 .VPHero .tagline {
+
   font-size: 20px !important;
+
   color: #cbd5e1 !important;
 
   max-width: 700px;
@@ -132,30 +157,78 @@ body {
 ========================================= */
 
 .VPHero .image {
-  animation: float 5s ease-in-out infinite;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* MAIN GLOW */
+
+.VPHero .image::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 999px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139,92,246,0.9) 0%,
+      rgba(139,92,246,0.5) 25%,
+      rgba(59,130,246,0.35) 50%,
+      transparent 75%
+    );
+
+  filter: blur(80px);
+
+  z-index: 0;
+
+  animation:
+    glowPulse 4s ease-in-out infinite;
+}
+
+/* IMAGE */
 
 .VPHero .image img {
 
-  border-radius: 32px;
+  position: relative;
+
+  z-index: 2;
+
+  width: 280px !important;
+
+  animation:
+    float 5s ease-in-out infinite;
 
   filter:
-    drop-shadow(0 0 20px rgba(139,92,246,0.6))
-    drop-shadow(0 0 60px rgba(139,92,246,0.4));
+    drop-shadow(0 0 20px rgba(139,92,246,1))
+    drop-shadow(0 0 40px rgba(139,92,246,0.9))
+    drop-shadow(0 0 80px rgba(59,130,246,0.8));
 
   transition: 0.4s ease;
 }
 
+/* HOVER */
+
 .VPHero .image img:hover {
 
-  transform: scale(1.03);
+  transform: scale(1.05);
 
   filter:
-    drop-shadow(0 0 30px rgba(139,92,246,0.9))
-    drop-shadow(0 0 90px rgba(139,92,246,0.7));
+    drop-shadow(0 0 30px rgba(139,92,246,1))
+    drop-shadow(0 0 60px rgba(139,92,246,1))
+    drop-shadow(0 0 120px rgba(59,130,246,1));
 }
 
-/* Floating Animation */
+/* FLOAT */
 
 @keyframes float {
 
@@ -172,6 +245,26 @@ body {
   }
 }
 
+/* GLOW */
+
+@keyframes glowPulse {
+
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
 /* =========================================
    BUTTONS
 ========================================= */
@@ -185,15 +278,16 @@ body {
   transition: all 0.3s ease !important;
 }
 
-/* Brand Button */
+/* BRAND BUTTON */
 
 .VPButton.brand {
 
-  background: linear-gradient(
-    135deg,
-    #00d1b2,
-    #8b5cf6
-  ) !important;
+  background:
+    linear-gradient(
+      135deg,
+      #00d1b2,
+      #8b5cf6
+    ) !important;
 
   border: none !important;
 
@@ -211,13 +305,15 @@ body {
     0 0 35px rgba(139,92,246,0.6);
 }
 
-/* Alt Button */
+/* ALT BUTTON */
 
 .VPButton.alt {
 
-  border: 1px solid rgba(255,255,255,0.12) !important;
+  border:
+    1px solid rgba(255,255,255,0.12) !important;
 
-  background: rgba(255,255,255,0.04) !important;
+  background:
+    rgba(255,255,255,0.04) !important;
 
   backdrop-filter: blur(12px);
 }
@@ -235,6 +331,7 @@ body {
 ========================================= */
 
 .VPFeatures {
+
   padding-top: 60px;
 }
 
@@ -257,7 +354,7 @@ body {
   transition: all 0.35s ease;
 }
 
-/* Card Glow */
+/* FEATURE GLOW */
 
 .VPFeature::before {
 
@@ -294,7 +391,7 @@ body {
     0 0 30px rgba(139,92,246,0.25);
 }
 
-/* Feature Title */
+/* FEATURE TITLE */
 
 .VPFeature .title {
 
@@ -318,7 +415,7 @@ body {
     1px solid rgba(255,255,255,0.06);
 }
 
-/* Active Sidebar Item */
+/* ACTIVE ITEM */
 
 .VPSidebarItem.is-active > .item .link {
 
@@ -335,7 +432,7 @@ body {
 }
 
 /* =========================================
-   CODE BLOCKS
+   CODE BLOCK
 ========================================= */
 
 div[class*='language-'] {
@@ -360,6 +457,7 @@ a {
 }
 
 a:hover {
+
   text-shadow:
     0 0 12px rgba(139,92,246,0.6);
 }
@@ -396,6 +494,6 @@ a:hover {
   }
 
   .VPHero .image img {
-    max-width: 260px;
+    width: 220px !important;
   }
-                    }
+   }
