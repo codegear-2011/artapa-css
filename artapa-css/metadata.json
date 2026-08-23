@@ -1,0 +1,6 @@
+{
+  "name": "ARTAPA CSS",
+  "description": "AI-optimized, zero-config, runtime CSS framework with namespace syntax and instant in-browser styling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
