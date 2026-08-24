@@ -117,7 +117,7 @@ export const HeroSection: React.FC = () => {
         {/* Quick CTA Actions */}
         <div className="flex flex-wrap items-center justify-center gap-3.5 mb-14">
           <a
-            href="https://github.com"
+            href="https://github.com/codegear-2011/artapa-css"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
