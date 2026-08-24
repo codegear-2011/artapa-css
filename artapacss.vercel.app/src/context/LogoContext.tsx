@@ -11,9 +11,15 @@ const LogoContext = createContext<LogoContextType>({
 export const LogoProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [logoUrl, setLogoUrl] = useState<string | null>(null);
 
-  // Automatically check if favicon.ico or logo.png exists in the project root/public
+  // Automatically check if a hosted logo, favicon.ico, or logo.png exists
   useEffect(() => {
-    const candidates = ['/artapacss.vercel.app/favicon.ico', 'logo.png', 'favicon.svg', 'favicon.png'];
+    const candidates = [
+      'https://i.ibb.co/4nhh1D8C/output-onlinepngtools-1.png', // hosted logo — tried first
+      '/artapacss.vercel.app/favicon.ico',
+      'logo.png',
+      'favicon.svg',
+      'favicon.png',
+    ];
     let isMounted = true;
 
     const checkNextCandidate = (index: number) => {
@@ -23,7 +29,7 @@ export const LogoProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       img.onload = () => {
         if (isMounted) {
           setLogoUrl(testSrc);
-          
+
           // Also dynamically ensure head favicon link is synced
           if (typeof document !== 'undefined') {
             let link: HTMLLinkElement | null = document.querySelector("link[rel*='icon']");
