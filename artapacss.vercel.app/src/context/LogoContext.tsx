@@ -13,7 +13,7 @@ export const LogoProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   // Automatically check if favicon.ico or logo.png exists in the project root/public
   useEffect(() => {
-    const candidates = ['favicon.ico', 'logo.png', 'favicon.svg', 'favicon.png'];
+    const candidates = ['/artapacss.vercel.app/favicon.ico', 'logo.png', 'favicon.svg', 'favicon.png'];
     let isMounted = true;
 
     const checkNextCandidate = (index: number) => {
