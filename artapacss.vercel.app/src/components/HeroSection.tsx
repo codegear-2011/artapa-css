@@ -131,7 +131,7 @@ export const HeroSection: React.FC = () => {
           </a>
 
           <a
-            href="#documentation"
+            href="https://artapacssdocs.vercel.app/"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
             <BookOpen className="w-4 h-4" style={{ color: currentPreset.primary }} />
@@ -153,7 +153,7 @@ export const HeroSection: React.FC = () => {
                   }`}
                   style={activeModeTab === 'runtime' ? { backgroundColor: currentPreset.primary } : {}}
                 >
-                  ⚡ Option 1: Runtime JS (~4KB)
+                  Runtime JS (~4KB)
                 </button>
                 <button
                   onClick={() => setActiveModeTab('static')}
@@ -164,7 +164,7 @@ export const HeroSection: React.FC = () => {
                   }`}
                   style={activeModeTab === 'static' ? { backgroundColor: currentPreset.primary } : {}}
                 >
-                  📦 Option 2: Static CSS (~2KB)
+                  Static CSS (~2KB)
                 </button>
               </div>
 
@@ -195,7 +195,7 @@ export const HeroSection: React.FC = () => {
                 ) : (
                   <>
                     <Copy className="w-3.5 h-3.5" />
-                    <span>Copy Tag</span>
+                    <span>Copy</span>
                   </>
                 )}
               </button>
