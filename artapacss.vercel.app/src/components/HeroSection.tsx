@@ -153,7 +153,7 @@ export const HeroSection: React.FC = () => {
                   }`}
                   style={activeModeTab === 'runtime' ? { backgroundColor: currentPreset.primary } : {}}
                 >
-                  Runtime JS (~4KB)
+                  Runtime JS
                 </button>
                 <button
                   onClick={() => setActiveModeTab('static')}
@@ -164,7 +164,7 @@ export const HeroSection: React.FC = () => {
                   }`}
                   style={activeModeTab === 'static' ? { backgroundColor: currentPreset.primary } : {}}
                 >
-                  Static CSS (~2KB)
+                  Static CSS
                 </button>
               </div>
 
