@@ -70,7 +70,7 @@ export const HeroSection: React.FC = () => {
               className="text-xs font-bold font-mono"
               style={{ color: currentPreset.primary }}
             >
-              ARTAPA CSS v0.1.0-beta.1
+              ARTAPA CSS v0.1.0
             </span>
             <span className="text-xs text-slate-500 font-medium hidden sm:inline">
               — Zero Build Config • Pure Runtime & Static CSS
