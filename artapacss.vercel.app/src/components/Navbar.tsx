@@ -47,8 +47,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
 
   const navLinks = [
     { label: 'Playground', href: '#playground', icon: Code2 },
-    { label: 'Documentation', href: '#documentation', icon: BookOpen },
-    { label: 'Get the AI skill', href: '#ai-skill', icon: Sparkles },
+    { label: 'Documentation', href: 'https://artapacssdocs.vercel.app', icon: BookOpen },
+    { label: 'Get the AI skill', href: 'https://raw.githubusercontent.com/codegear-2011/artapa-css/main/AI-RULES.md', icon: Sparkles },
   ];
 
   return (
