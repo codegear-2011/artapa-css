@@ -6,7 +6,10 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'ArtapaCSS Docs',
+			title: '',
+			logo: {
+        src: 'https://i.ibb.co/JFFT69R1/In-Shot-20260912-094626661.png',
+      },
 			favicon: "https://i.ibb.co/4nhh1D8C/output-onlinepngtools-1.png",
 			customCss: ['./src/fonts/font-face.css'],
 			
